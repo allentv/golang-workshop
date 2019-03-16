@@ -1,5 +1,4 @@
 {
     "go.autocompleteUnimportedPackages": true,
-    "go.formatTool": "gofmt",
-    "go.gopath": "/Users/allen/workspace/github.com/golang-workshop/beginners/06 - packages",
+    "go.formatTool": "gofmt"
 }
