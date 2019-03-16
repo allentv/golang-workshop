@@ -40,7 +40,7 @@ The above tools help to write code that conforms to the Golang code standards.
 
 * Add the following snippet to the file
 
-```
+```go
 package main
 
 import "fmt"

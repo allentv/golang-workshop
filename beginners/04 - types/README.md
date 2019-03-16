@@ -111,7 +111,7 @@ For numeric types, the numbers alongside the types indicate the number of bits t
 
 The builtin function `complex` is used to construct a complex number with real and imaginary parts. The complex function has the following definition:
 
-```
+```go
 func complex(r, i FloatType) ComplexType
 ```
 
@@ -124,7 +124,7 @@ Complex numbers can also be created using the shorthand syntax:
 
 Below is an example of working with complex numbers:
 
-```
+```go
 c1 := complex(5, 7)
 c2 := 8 + 27i
 cadd := c1 + c2
@@ -143,7 +143,7 @@ fmt.Println("product:", cmul)
 
 `string` is a collection of characters enclosed in double quotes.
 
-```
+```go
 first := "Allen"
 last := "Varghese"
 name := first +" "+ last
@@ -154,7 +154,7 @@ fmt.Println("My name is",name)
 
 The type of a variable can be printed using `%T` format specifier available in the `Printf` method.
 
-```
+```go
 var a = 10
 fmt.Printf("a is of type %T, value is ", a, a)
 ```
@@ -165,7 +165,19 @@ fmt.Printf("a is of type %T, value is ", a, a)
 
 There is no automatic type conversion in Golang. Use the corresponding type functions to do the conversion.
 
-```
+```go
 int(<float value>)
 float64(<integer value>)
 ```
+
+
+### Constants
+
+Constants are values that do not change once assigned to a variable. The keyword `const` is used instead of `var` to declare a constant value along with the type definition.
+
+```go
+const a bool = true
+const b int32 = 32890
+const c string = "Something"
+```
+

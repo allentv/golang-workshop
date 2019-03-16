@@ -5,7 +5,7 @@ A variable is the name given to a memory location that stores a value for a part
 The `var` keyword is used to declare variables. The syntax is `var <name> <type>` followed by optional value assignment.
 
 Below are few examples:
-```
+```go
 var a int // Default initialization
 
 var b = 10 // Automatic type inference
