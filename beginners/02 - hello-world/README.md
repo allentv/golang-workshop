@@ -6,7 +6,7 @@ We are going to start with the traditional `Hello World` program. The goal is to
 * Create a folder named `hello-world`
 * Assign the environment variable `GOPATH` to point to the absolute path of the above folder. Here is an example: `export GOPATH="/home/users/allen/workspace/hello-world"`
 * Open this folder in VSCode `File > Open`. You should be able to see a side pane with the folder opened
-* Create a file called `hello.go` from `File > New File`
+* Create a file called `main.go` from `File > New File`
 * After the file is created, VSCode Go extension will kick in and start downloading few packages. Below is an example on my machine:
 
 ```
@@ -50,7 +50,7 @@ func main() {
 }
 ```
 
-* Execute the able file with the command `go run hello.go`
+* Execute the able file with the command `go run main.go`
 * `Hello World` is printed on the terminal
 
 
