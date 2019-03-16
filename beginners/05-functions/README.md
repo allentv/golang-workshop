@@ -1,4 +1,4 @@
-## Functions
+# Functions
 
 A function is a group of statements that execute a block of work. A function may or may not take input and may or may not return a value back to the caller.
 
@@ -42,8 +42,7 @@ func SumDifference(a int, b int) (int, int) {
 
 In the above example, instead of assigning the sum and difference to two variables and then returning them, the steps are simplified to have the calculation happen in one line with the `return` statement.
 
-
-#### Blank Identifier
+## Blank Identifier
 
 The blank identifier is used in place of any value of any type to discard the value especially in cases where one or more of the return values from a function are not being used.
 
@@ -57,7 +56,7 @@ The above code snippet will only save the difference of two numbers to `diff` va
 
 The order of return values matter. The masking of values happens in the same order as the values are returned from the function.
 
-#### Named return values
+## Named return values
 
 When defining a function, the return types can be given a name which can then be referenced in the body of the function.
 

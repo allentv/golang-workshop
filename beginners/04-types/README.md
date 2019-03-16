@@ -1,6 +1,7 @@
-## Types
+# Types
 
 The following types are available in Golang:
+
 * bool
 * Numeric Types:
   * int8, int16, int32, int64, int
@@ -17,25 +18,25 @@ For numeric types, the numbers alongside the types indicate the number of bits t
 
 ---
 
-`int8`: represents 8 bit signed integers 
+`int8`: represents 8 bit signed integers
 
-`size`: 8 bits 
+`size`: 8 bits
 
 `range`: -128 to 127
 
 ---
 
-`int16`: represents 16 bit signed integers 
+`int16`: represents 16 bit signed integers
 
-`size`: 16 bits 
+`size`: 16 bits
 
 `range`: -32768 to 32767
 
 ---
 
-`int32`: represents 32 bit signed integers 
+`int32`: represents 32 bit signed integers
 
-`size`: 32 bits 
+`size`: 32 bits
 
 `range`: -2147483648 to 2147483647
 
@@ -49,9 +50,9 @@ For numeric types, the numbers alongside the types indicate the number of bits t
 
 ---
 
-`int`: represents 32 or 64 bit integers depending on the underlying platform. You should generally be using int to represent integers unless there is a need to use a specific sized integer. 
+`int`: represents 32 or 64 bit integers depending on the underlying platform. You should generally be using int to represent integers unless there is a need to use a specific sized integer.
 
-`size`: 32 bits in 32 bit systems and 64 bit in 64 bit systems. 
+`size`: 32 bits in 32 bit systems and 64 bit in 64 bit systems.
 
 `range`: -2147483648 to 2147483647 in 32 bit systems and -9223372036854775808 to 9223372036854775807 in 64 bit systems
 
@@ -121,7 +122,6 @@ Complex numbers can also be created using the shorthand syntax:
 
 `c := 6 + 7i`
 
-
 Below is an example of working with complex numbers:
 
 ```go
@@ -161,7 +161,7 @@ fmt.Printf("a is of type %T, value is ", a, a)
 
 ---
 
-### Type Conversion
+## Type Conversion
 
 There is no automatic type conversion in Golang. Use the corresponding type functions to do the conversion.
 
@@ -170,8 +170,7 @@ int(<float value>)
 float64(<integer value>)
 ```
 
-
-### Constants
+## Constants
 
 Constants are values that do not change once assigned to a variable. The keyword `const` is used instead of `var` to declare a constant value along with the type definition.
 
@@ -180,4 +179,3 @@ const a bool = true
 const b int32 = 32890
 const c string = "Something"
 ```
-

@@ -1,15 +1,16 @@
-## Hello World
+# Hello World
 
 We are going to start with the traditional `Hello World` program. The goal is to write code to print `Hello World` on the terminal.
 
-### Steps
+## Steps
+
 * Create a folder named `hello-world`
 * Assign the environment variable `GOPATH` to point to the absolute path of the above folder. Here is an example: `export GOPATH="/home/users/allen/workspace/hello-world"`
 * Open this folder in VSCode `File > Open`. You should be able to see a side pane with the folder opened
 * Create a file called `main.go` from `File > New File`
 * After the file is created, VSCode Go extension will kick in and start downloading few packages. Below is an example on my machine:
 
-```
+```bash
 Installing 10 tools at /Users/allen/go/bin
   gocode
   gopkgs
@@ -53,16 +54,13 @@ func main() {
 * Execute the able file with the command `go run main.go`
 * `Hello World` is printed on the terminal
 
-
 ## Deep Dive
 
 In this section, we are going to evaluate what each line means in the `Hello World` program.
 
-
 Line 1 => `package main`
 
 Packages are how you group common functionality in Golang. The default package is `main` and is usually used to signify that this file will be an entrypoint for an executable. Since we are using only one file, we set the package name to be `main`
-
 
 Line 3 => `import "fmt"`
 

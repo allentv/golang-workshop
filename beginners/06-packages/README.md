@@ -1,4 +1,4 @@
-## Packages
+# Packages
 
 Good code organization is essential for maintaining any project. Organizing code neatly into differen folders across multiple files makes it easier to test and maintain code very easily. Folders are called `packages` in Golang. There can be one or more files in a package. They are all bound by using the same package name at the beginning of the file. Importing a package is done by providing the path to the directory instead of the file in the package.
 
@@ -28,8 +28,7 @@ Packages for the exercise should be created under the `src` folder without a `ma
 
 ---
 
-
-### References
+## References
 
 * [Golang standard library packages](https://golang.org/pkg/)
 * [Everything you need to know about packages](https://medium.com/rungo/everything-you-need-to-know-about-packages-in-go-b8bac62b74cc)
