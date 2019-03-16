@@ -53,3 +53,32 @@ func main() {
 * Execute the able file with the command `go run hello.go`
 * `Hello World` is printed on the terminal
 
+
+## Deep Dive
+
+In this section, we are going to evaluate what each line means in the `Hello World` program.
+
+
+Line 1 => `package main`
+
+Packages are how you group common functionality in Golang. The default package is `main` and is usually used to signify that this file will be an entrypoint for an executable. Since we are using only one file, we set the package name to be `main`
+
+
+Line 3 => `import "fmt"`
+
+This line indicates that the package named `fmt` that is shipped as part of Golang, is required for execution of this program. How this is used will be explained later
+
+Line 5 => `func main() {`
+
+Functions in Golang are defined with the keyword `func`. Here a function named `main` is defined that takes no input arguments. The function body is defined between curly braces `{ }`
+
+To run file a file in Golang as an executable, there should be a `main` function and the package should be `main`. There can be only one `main` function in a Go program even if there are multiple `.go` files i.e. there can be only one entry point.
+
+Line 6 => `fmt.Println("Hello World")`
+
+This is the line that displays `Hello World` on the terminal. `Println` is a function in the `fmt` package which takes one string argument `"Hello World"`. The `.` is used to define the path for Golang to find the function. So `fmt.Println` means the function `Println` is defined in the `fmt` package.
+
+The function `Println` does two things:
+
+* Displays the input as provided by the user
+* Adds a new line after the string is displayed
