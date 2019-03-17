@@ -63,3 +63,23 @@ for i := 1; i <= 10; i = i + 1 {
 ```
 
 The execution starts with the initialization statement where the variable `i` is initialized with the value of `1`. The condition is then checked `1 <= 10` which is statisfied and then the body of the loop is executed which prints `1` to the terminal. As there is nothing else to execute, the post statement is executed which increments the value of the variable `i` by `1`. The condition is again checked to confirm if it is true. If so, then then body of the `for` loop is executed again. This repeats until the condition becomes false.
+
+
+## switch
+
+A switch is a conditional statement which evaluates an expression and compares it against a list of possible matches and executes blocks of code according to the match. It can be considered as an idiomatic way of writing multiple `if else` clauses.
+
+It follows the below syntax:
+
+```go
+switch expression {
+    case expression or value:
+        // body
+    case expression or value:
+        // body
+    default:
+        // body
+}
+```
+
+In the above block, the expression is evaluated and the value is compared with the value in each of the `case` statements. The comparison stops when there is a match. If no match is found, then the `default` block is executed. This is optional but good to have to support edge cases.
