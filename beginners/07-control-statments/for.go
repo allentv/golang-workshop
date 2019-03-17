@@ -11,6 +11,9 @@ func main() {
 
 	fmt.Println("\n\nOdd numbers =>")
 	simpleContinue()
+
+	fmt.Println("\n\nNested loops =>")
+	printTower()
 }
 
 func simple() {
@@ -36,5 +39,15 @@ func simpleContinue() {
 			continue
 		}
 		fmt.Print(i, " ")
+	}
+}
+
+func printTower() {
+	const ROWS = 5
+	for i := 0; i < ROWS; i++ {
+		for j := 0; j <= i; j++ {
+			fmt.Print(" * ")
+		}
+		fmt.Println("")
 	}
 }
